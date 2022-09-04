@@ -9,7 +9,7 @@ function Epaper() {
 const [news,setNews]=useState([])
 
    useEffect(() => {
-    fetch('http://15.206.72.106:4000/api')
+    fetch('http://3.109.211.218:4000/api')
   .then((response) => response.json())
   .then((data) => setNews(data));
     }, [])
@@ -29,7 +29,7 @@ const [news,setNews]=useState([])
                 // Setting various property values
                 let alink = document.createElement('a');
                 alink.href = fileURL;
-                alink.download = 'SamplePDF.pdf';
+                alink.download = ePaperArray[0].headline;
                 alink.click();
             })
         })

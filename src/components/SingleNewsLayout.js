@@ -9,7 +9,7 @@ import { useState,useEffect } from 'react';
 export const SingleNewsLayout = ({ props }) => {
         const [news,setNews]=useState([])
     useEffect(() => {
-    fetch('http://15.206.72.106:4000/api')
+    fetch('http://3.109.211.218:4000/api')
   .then((response) => response.json())
   .then((data) => setNews(data));
     }, [])

@@ -81,7 +81,7 @@ class FilesUploadComponent extends Component {
         formData.append('category', this.state.category)
         formData.append('youtubeVideoId', this.state.youtubeVideoId)
         console.log(this.state.name)
-        axios.post("http://15.206.72.106:4000/api/user-profile", formData, {
+        axios.post("http://3.109.211.218:4000/api/user-profile", formData, {
         }).then(res => {
             console.log(res)
         })
